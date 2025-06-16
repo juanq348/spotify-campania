@@ -3,7 +3,7 @@ import logo from "../assets/img/logo.png"
 
 export default function Planes() {
     return(
-        <>
+        <div id="planes">
         <h1 className="titulo-planes">Conocé nuestros planes</h1>
         <div className="planes-container">
             <div className="plan-individual">
@@ -105,6 +105,6 @@ export default function Planes() {
                 </div>
             </div>
         </div>
-        </>
+        </div>
     )
 }

@@ -1,5 +1,4 @@
 import '../styles/beneficios.css'
-import bucle from '../assets/video/bucle.mp4'
 import wifi from '../assets/img/wifi.png'
 import infinito from '../assets/img/infinito.png'
 import vinilo from '../assets/img/vinilo.png'
@@ -12,7 +11,7 @@ function Beneficios() {
         <div className="carta-uno">
           <div className="contenedor-img-uno">
             <video className='fondo-video' autoPlay loop muted playsInline>
-              <source src={bucle} type='video/mp4'/>
+              <source src="https://res.cloudinary.com/dpycdilno/video/upload/v1750113670/bucle_bfrhhg.mp4" type='video/mp4'/>
             </video>
           </div>
           <div className="carta-texto">

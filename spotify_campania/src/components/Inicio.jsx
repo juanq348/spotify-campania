@@ -45,7 +45,14 @@ function Inicio() {
                     <motion.h1 className='textoLogo' initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5}}>Spotify</motion.h1>
                 </div>
                 <motion.h1 className='textoSide' initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5}}>Disfrutá tus canciones favoritas sin interrupciones.</motion.h1>
-                <motion.button className='empiezaYa' key={artista.color} animate={{backgroundColor: artista.color}} transition={{duration:0.5}}>¡EMPIEZA TU PRUEBA GRATUITA YA!</motion.button>
+                <motion.button className='empiezaYa' key={artista.color} animate={{backgroundColor: artista.color}} transition={{duration:0.5}}
+                onClick={() =>{
+                    const seccionPlanes = document.getElementById("planes")
+                    if (seccionPlanes){
+                        seccionPlanes.scrollIntoView({behavior:'smooth'})
+                    }
+                }}
+                >¡EMPIEZA TU PRUEBA GRATUITA YA!</motion.button>
             </div>
             <div className="artista">
                 <AnimatePresence mode = "wait">
