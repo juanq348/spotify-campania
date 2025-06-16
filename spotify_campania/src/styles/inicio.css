@@ -1,0 +1,94 @@
+.inicio{
+    max-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.textoInicio{
+    margin-top: 15vh;
+    margin-left: 10vh;
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -50px;
+    margin-bottom: 20px;
+}
+
+.logo h1{
+    margin-bottom: 30px;
+    margin-left: 20px;
+    width: 300px;
+}
+
+.logoSpotify{
+    height: 15vh;
+    max-width: 15vh;
+    margin-bottom: 30px;
+    margin-left:50px;
+}
+
+.textoSide{
+    max-width: 65vh;
+    margin-bottom: 20px;
+}
+
+.textoInicio h2{
+    position: absolute;
+    top:92%;
+    left: 16%;
+}
+
+.fotoArtista{
+    max-height: 100vh;
+    margin-left: -420px;
+    z-index: -1;
+}
+
+.nombre-artista{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    z-index: 2;
+    text-align: center;
+    font-family: 'circularStd', sans-serif;
+    pointer-events: none;
+    box-shadow: 0px 0px 10px 7px #000000c6;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.5s ease;
+}
+
+.empiezaYa{
+    z-index: 1;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    margin-top: 20px;
+    font-family:'circularStd', sans-serif;;
+    font-weight: bold;
+    max-width: fit-content;
+    align-self: center;
+    font-size: 1.4rem;
+}
+
+.empiezaYa:hover{
+    transform: scale(1.02);
+}
