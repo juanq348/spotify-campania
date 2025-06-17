@@ -1,12 +1,13 @@
 import "../styles/planes.css"
 import logo from "../assets/img/logo.png"
+import { motion } from 'framer-motion'
 
 export default function Planes() {
     return(
         <div id="planes">
-        <h1 className="titulo-planes">Conocé nuestros planes</h1>
+        <motion.h1 className="titulo-planes" initial={{opacity:0, y: 50}} whileInView={{opacity:1, y: 0}} viewport={{ once: true, amount: 0.3}} transition={{duration:0.5}}>Conocé nuestros planes</motion.h1>
         <div className="planes-container">
-            <div className="plan-individual">
+            <motion.div className="plan-individual" initial={{opacity:0, y: 50}} whileInView={{opacity:1, y: 0}} viewport={{ once: true, amount: 0.3}} transition={{duration:0.5}}>
                 <div className="encabezado-planes">
                     <img src={logo}/>
                     <h2>Premium</h2>
@@ -29,9 +30,9 @@ export default function Planes() {
                     <p className="letra-chica">$0 por 1 mes.Después, cuesta $2.499*** al mes. La oferta solo esta disponible si aún no probaste Premium. Se aplican Términos.</p>
                     <p className="letra-chica">***+impuestos aplicables.</p>
                 </div>
-            </div>
+            </motion.div>
 
-            <div className="plan-duo">
+            <motion.div className="plan-duo" initial={{opacity:0, y: 50}} whileInView={{opacity:1, y: 0}} viewport={{ once: true, amount: 0.3}} transition={{duration:0.5}}>
                 <div className="encabezado-planes">
                     <img src={logo}/>
                     <h2>Premium</h2>
@@ -53,9 +54,9 @@ export default function Planes() {
                     <p className="letra-chica" style={{marginTop:"15px"}}>Para parejas que viven en el mismo domicilio. Se aplican Términos.</p>
                     <p className="letra-chica">***+impuestos aplicables.</p>
                 </div>
-            </div>
+            </motion.div>
 
-            <div className="plan-estudiante">
+            <motion.div className="plan-estudiante" initial={{opacity:0, y: 50}} whileInView={{opacity:1, y: 0}} viewport={{ once: true, amount: 0.3}} transition={{duration:0.5}}>
                 <div className="encabezado-planes">
                     <img src={logo}/>
                     <h2>Premium</h2>
@@ -77,9 +78,9 @@ export default function Planes() {
                     <p className="letra-chica">$0 por 1 mes.Después, cuesta $1.299*** al mes. La oferta está disponible solo para estudiantes de instituciones de educación superior acreditadas que aún no hayan probado Premium. Se aplican Términos.</p>
                     <p className="letra-chica">***+impuestos aplicables.</p>
                 </div>
-            </div>
+            </motion.div>
 
-            <div className="plan-familiar">
+            <motion.div className="plan-familiar" initial={{opacity:0, y: 50}} whileInView={{opacity:1, y: 0}} viewport={{ once: true, amount: 0.3}} transition={{duration:0.5}}>
                 <div className="encabezado-planes">
                     <img src={logo}/>
                     <h2>Premium</h2>
@@ -103,7 +104,7 @@ export default function Planes() {
                     <p className="letra-chica">Para hasta 6 familiares que viven en el mismo domicilio. Se aplican Términos.</p>
                     <p className="letra-chica">***+impuestos aplicables.</p>
                 </div>
-            </div>
+            </motion.div>
         </div>
         </div>
     )
